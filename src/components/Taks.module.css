@@ -1,0 +1,105 @@
+.title{
+    width: 100%;
+    display: flex;
+    padding: 1rem 0.5rem;
+    justify-content: space-between;
+}
+
+.titleCreate{
+    color: var(--blue);
+
+}
+.titleCompleted{
+    color: var(--purple-dark);
+}
+
+.title p > span{
+    color: var(--gray-100);
+    background-color: var(--gray-400);
+    padding:0.1rem 0.7rem;
+    margin-left: 0.4rem;
+    border-radius: 50px;
+}
+
+.taks{
+    width: 100%;
+    margin: 1rem;
+    padding-top: 5rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleEmpty{
+    color: var(--gray-300);
+    font-weight: bolder;
+}   
+.icone{
+    color: var(--gray-400);
+    margin-bottom: 1rem;
+}
+.titleHelp{
+    color: var(--gray-300);
+    font-weight: 500;
+}
+
+.tak{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--gray-500);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+.tak input[type="checkbox"]{
+    width: 20px;      /* Largura */
+    height: 20px;      /* Altura */
+    padding: 10px;     /* Espaço interno */
+    border-radius: 50%;
+    border: 3px solid var(--blue-dark);
+    appearance: none; /* Remove o estilo padrão do navegador */
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.tak input[type="checkbox"]:checked{
+    border: 3px solid var(--purple-dark);
+    background-color: var(--purple-dark);
+    background-image: url('../assets/ok.png');
+    background-position: center;
+    background-size: 1.4rem;
+    
+}
+
+
+
+.tak input:checked ~ p{
+    text-decoration: line-through;
+    color: var(--gray-300);
+    transition: 1.2s;
+    
+}
+
+.tak p{
+    width: 100%;
+    color: var(--gray-200);
+    font-size: 1.1rem;
+    font-family: var(--font-second);
+    font-weight: 400;
+
+}
+
+.iconDelete{
+    color: var(--gray-300);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.iconDelete:hover{
+    color: var(--danger);
+}

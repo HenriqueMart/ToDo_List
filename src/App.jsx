@@ -1,16 +1,38 @@
+//Elementos do React
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
+//Components
 import {Header} from '../src/components/header.jsx'
 import { NewItens } from './components/newItens.jsx'
+import {Taks} from './components/Taks.jsx'
 
-import {Notepad} from '@phosphor-icons/react'; 
 
+
+//CSS Global e Module
 import './global.css';
 import style from './app.module.css';
 
+
 function App() {
+
+  const lists = [
+    {
+      id: 1,
+      descrition: 'Realizar a Planejamento de Estudo da faculdade, na materia de empreendedorismo e prova da matéria de engenharia de sofware e concluir atividade de padrões de projeto'
+    },
+    {
+      id: 2,
+      descrition: 'Arrumar Casa'
+    },
+    {
+      id: 3,
+      descrition: 'Postar sobre esse projeto no LinkedIn'
+    }
+    
+  ]
+
 
   return (
     <>
@@ -22,15 +44,7 @@ function App() {
         <main>
           <div className={style.box}>
             <div className={style.content}>
-                <header>
-                  <p className={style.titleCreate}>Tarefas Criadas <span>0</span></p>
-                  <p className={style.titleCompleted}>Concluídas <span>0</span></p>
-                </header>
-                <section>
-                  <Notepad className={style.icone} size={60}/>
-                  <p className={style.titleEmpty}>Você ainda não tem tarefas cadastradas</p>
-                  <p className={style.titleHelp}>Crie tarefas e organize seus itens a fazer</p>
-                </section>
+                <Taks lists={lists}/>
             </div>
           </div>
         </main>
