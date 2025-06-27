@@ -6,36 +6,39 @@ import { useState } from 'react';
 
 export function NewItens({newTaks}){
 
-      const [newTak, setNewTak] = useState('');
+    const [newTak, setNewTak] = useState('');
+    
 
-      function handleinputChange(event){
-        event.target.setCustomValidity(''); //Limpa a mensagem de erro, permitindo ser válido na digitação
-        setNewTak(event.target.value);
+    function handleinputChange(event){
+    event.target.setCustomValidity(''); //Limpa a mensagem de erro, permitindo ser válido na digitação
+    setNewTak(event.target.value);
 
-      }
+    }
 
 
-      function handleSubmit(event){
-        if(newTak.trim().length === 0){ //trim -> ignora espaço
-            handleInvalid();
-            return;
-        } 
+    function handleSubmit(event){
+    if(newTak.trim().length === 0){ //trim -> ignora espaço
+        handleInvalid();
+        return;
+    } 
 
-        event.preventDefault(); 
+    event.preventDefault(); 
 
-        const newTaksData = {
-            id: crypto.randomUUID(), //Gerando id Aleatoriamente;
-            description: newTak
-        };
+    const newTaksData = {
+        id: crypto.randomUUID(), //Gerando id Aleatoriamente;
+        description: newTak
+    };
 
-        newTaks(newTaksData);
-        setNewTak('');
-        
-      }
+    newTaks(newTaksData);
+    setNewTak('');
+    
+    }
 
-      function handleInvalid(){
-        alert('A tarefa está vazio'); 
-      }
+    function handleInvalid(){
+    alert('A tarefa está vazio'); 
+    }
+
+    
 
     return(
         <>

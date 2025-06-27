@@ -23,6 +23,11 @@ function App() {
       description: 'Realizar a Planejamento de Estudo da faculdade, na materia de empreendedorismo e prova da matéria de engenharia de sofware e concluir atividade de padrões de projeto'
     }
   ]);
+  
+  const allTasks = tasks.length;
+  const allCompleted = 0;
+
+  
 
   function handleAddTask(taksObject){
 
@@ -36,6 +41,7 @@ function App() {
     })
 
     setTasks(seachTaksDelete);
+    
   }
 
 
@@ -49,7 +55,7 @@ function App() {
         <main>
           <div className={style.box}>
             <div className={style.content}>
-                <Taks taks={tasks} handleDeleteTask={handleDeleteTask}/>
+                <Taks taks={tasks} handleDeleteTask={handleDeleteTask} allTasks={allTasks}/>
             </div>
           </div>
         </main>
