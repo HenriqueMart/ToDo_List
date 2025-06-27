@@ -15,9 +15,10 @@ export function Taks({taks, handleDeleteTask, allTasks}){
         handleDeleteTask(taskId);
         
         //Caso eu excluia um itens que foi concluido e precisse atualizar seu valor
-        if(tasksCompleted.includes(taskId));
+        if(tasksCompleted.includes(taskId)){
             handleCheck(taskId);
         }
+    }
 
     function handleCheck(taskIdCompleted){
        const isAlreadyCompleted = tasksCompleted.includes(taskIdCompleted);
