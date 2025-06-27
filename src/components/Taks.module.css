@@ -57,9 +57,9 @@
     margin: 0.5rem;
 }
 .tak input[type="checkbox"]{
-    width: 20px;      /* Largura */
-    height: 20px;      /* Altura */
-    padding: 10px;     /* Espaço interno */
+    width: 20px;      
+    height: 20px;      
+    padding: 10px;     
     border-radius: 50%;
     border: 3px solid var(--blue-dark);
     appearance: none; /* Remove o estilo padrão do navegador */

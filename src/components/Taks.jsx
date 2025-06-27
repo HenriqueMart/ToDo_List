@@ -4,9 +4,9 @@ import style from './Taks.module.css';
 //Icone
 import {Notepad, Trash } from '@phosphor-icons/react'; 
 
-export function Taks({lists}){
+export function Taks({taks}){
 
-    const isTaks = lists.length === 0;
+    const isTaks = taks.length === 0;
 
     return(
         <>
@@ -25,11 +25,11 @@ export function Taks({lists}){
             </section>
             ):(
                 <>
-                {lists.map(itens => {
+                {taks.map(itens => {
                        return( 
-                       <div className={style.tak}>
+                       <div className={style.tak} key={itens.id}>
                             <input type="checkbox"/>
-                            <p key={itens.id}>{itens.descrition}</p>
+                            <p>{itens.description}</p>
                             <Trash className={style.iconDelete} size={30}/>
                         </div>     
                     )
