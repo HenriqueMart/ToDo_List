@@ -9,22 +9,32 @@ export function NewItens({newTaks}){
       const [newTak, setNewTak] = useState('');
 
       function handleinputChange(event){
-        event.target.setCustomValidity('');
+        event.target.setCustomValidity(''); //Limpa a mensagem de erro, permitindo ser válido na digitação
         setNewTak(event.target.value);
 
       }
 
-      
+
       function handleSubmit(event){
-        event.preventDefault();
+        if(newTak.trim().length === 0){ //trim -> ignora espaço
+            handleInvalid();
+            return;
+        } 
+
+        event.preventDefault(); 
 
         const newTaksData = {
-            id: crypto.randomUUID(),
+            id: crypto.randomUUID(), //Gerando id Aleatoriamente;
             description: newTak
         };
 
         newTaks(newTaksData);
         setNewTak('');
+        
+      }
+
+      function handleInvalid(){
+        alert('A tarefa está vazio'); 
       }
 
     return(
@@ -36,6 +46,7 @@ export function NewItens({newTaks}){
                         onChange={handleinputChange} 
                         type="text" 
                         placeholder='Adicione uma nova Tarefa'
+                        onInvalid={handleInvalid}
                         required 
                     />
                     <button type="submit" onClick={handleSubmit}>

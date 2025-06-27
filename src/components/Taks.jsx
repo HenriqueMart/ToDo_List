@@ -4,9 +4,13 @@ import style from './Taks.module.css';
 //Icone
 import {Notepad, Trash } from '@phosphor-icons/react'; 
 
-export function Taks({taks}){
+export function Taks({taks, handleDeleteTask}){
 
     const isTaks = taks.length === 0;
+
+    function handleDelete(taskId){
+        handleDeleteTask(taskId);
+    }
 
     return(
         <>
@@ -30,7 +34,7 @@ export function Taks({taks}){
                        <div className={style.tak} key={itens.id}>
                             <input type="checkbox"/>
                             <p>{itens.description}</p>
-                            <Trash className={style.iconDelete} size={30}/>
+                            <Trash className={style.iconDelete} size={30} onClick={() => handleDelete(itens.id)}/>
                         </div>     
                     )
                 })}

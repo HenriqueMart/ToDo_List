@@ -17,7 +17,7 @@ import style from './app.module.css';
 
 function App() {
 
-  const [tasks, setTaks] = useState([
+  const [tasks, setTasks] = useState([
     {
       id: 1,
       description: 'Realizar a Planejamento de Estudo da faculdade, na materia de empreendedorismo e prova da matéria de engenharia de sofware e concluir atividade de padrões de projeto'
@@ -26,8 +26,16 @@ function App() {
 
   function handleAddTask(taksObject){
 
-      setTaks(prev  => [...tasks, taksObject]);
+      setTasks(prev  => [...tasks, taksObject]);
       
+  }
+
+  function handleDeleteTask(taskId){
+    const seachTaksDelete = tasks.filter(tasks => {
+      return tasks.id !== taskId;
+    })
+
+    setTasks(seachTaksDelete);
   }
 
 
@@ -41,7 +49,7 @@ function App() {
         <main>
           <div className={style.box}>
             <div className={style.content}>
-                <Taks taks={tasks}/>
+                <Taks taks={tasks} handleDeleteTask={handleDeleteTask}/>
             </div>
           </div>
         </main>
