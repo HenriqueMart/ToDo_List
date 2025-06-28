@@ -111,6 +111,10 @@
     
 }
 @media (max-width: 500px) {
+    .taks{
+        text-align: center;
+    }
+    
     .tak p, .titleCreate, .titleCompleted   {
         font-size: 0.6rem;
     }
@@ -118,5 +122,6 @@
         width: 5px;
         height: 5px;
     }   
+
     
 }

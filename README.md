@@ -1,12 +1,95 @@
-# React + Vite
+# 📘 To DO List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto tem como objetivo criar uma lista de tarefas para serem concluída, permitindo realizar contagem de total de tarefas criadas e concluídas utilizando conceitos de React. 
+> Uma aplicação de lista de tarefas desenvolvida com React, permitindo adicionar, completar e remover tarefas de forma simples e eficiente.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [CSS Modules](https://github.com/css-modules/css-modules) 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Demonstração
+
+| Tela Inicial | Tela sem Tarefa |
+|--------------|-----------------|
+| ![Home](/src/assets/reame/tela1.webp)|![Tarefa](/src/assets/reame/tela2.webp)
+
+---
+
+## 📂 Estrutura de Pastas
+
+```bash
+src/
+├── assets/
+├── components/
+├── App.jsx
+└── global.css
+└── app.module.css
+└── main.jsx
+```
+## ⚙️ Funcionalidades
+
+- ✅ Adicionar novas tarefas
+
+- ✅ Marcar tarefas como concluídas
+
+- ✅ Remover tarefas
+
+- ✅ Validação de input vazio
+
+# 🧠 Aprendizados
+
+- Uso de Hooks (useState, useEffect)
+
+- Conceitos de componentização
+
+- Trabalhar com propriedades e estado
+
+- Imutabilidade no React
+
+- Organização de pastas e componentes
+
+- Integração de bibliotecas externas
+
+- CSS module
+
+# 🛠️ Como Rodar Localmente
+
+```bash
+
+# Clone o repositório
+git clone https://github.com/HenriqueMart/ToDo_List
+
+# Acesse a pasta
+cd ToDo_List
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+
+```
+
+# 🔗 Deploy
+
+➡️ Clique aqui para acessar o código da aplicação [codigo](https://github.com/HenriqueMart/ToDo_List)
+
+Ou:
+
+🟢 Veja visualmente o projeto [Site](https://github.com/HenriqueMart/ToDo_List) 
+
+# 🤝 Contribuições
+Sinta-se à vontade para abrir issues e enviar pull requests.
+
+# 📄 Licença
+Este projeto está sob a licença MIT.
+
+# 👨‍💻 Autor
+Feito por Desenvolvedor Henrique Martins

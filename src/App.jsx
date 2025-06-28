@@ -18,8 +18,8 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      description: 'Realizar a Planejamento de Estudo da faculdade, na materia de empreendedorismo e prova da matéria de engenharia de sofware e concluir atividade de padrões de projeto'
-    }
+      description: 'Realizar a Planejamento de Estudo da faculdade'
+      }
   ]);
   
   const allTasks = tasks.length;
