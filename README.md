@@ -1,6 +1,6 @@
 # 📘 To DO List
 
-Esse projeto tem como objetivo criar uma lista de tarefas para serem concluída, permitindo realizar contagem de total de tarefas criadas e concluídas utilizando conceitos de React. 
+> Esse projeto tem como objetivo criar uma lista de tarefas para serem concluída, permitindo realizar contagem de total de tarefas criadas e concluídas utilizando conceitos de React. 
 > Uma aplicação de lista de tarefas desenvolvida com React, permitindo adicionar, completar e remover tarefas de forma simples e eficiente.
 
 ---
@@ -83,7 +83,7 @@ npm run dev
 
 Ou:
 
-🟢 Veja visualmente o projeto [Site](https://github.com/HenriqueMart/ToDo_List) 
+🟢 Veja visualmente o projeto [Site](https://henriquemart.github.io/ToDo_List/) 
 
 # 🤝 Contribuições
 Sinta-se à vontade para abrir issues e enviar pull requests.
