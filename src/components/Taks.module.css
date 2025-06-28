@@ -103,3 +103,20 @@
 .iconDelete:hover{
     color: var(--danger);
 }
+
+@media (max-width: 700px) {
+    .tak p, .titleCreate, .titleCompleted   {
+        font-size: 0.875rem;
+    }
+    
+}
+@media (max-width: 500px) {
+    .tak p, .titleCreate, .titleCompleted   {
+        font-size: 0.6rem;
+    }
+    .tak input[type="checkbox"]{
+        width: 5px;
+        height: 5px;
+    }   
+    
+}
