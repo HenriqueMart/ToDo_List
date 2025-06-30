@@ -2,8 +2,8 @@
 import { useState } from 'react'
 
 //Components
-import {Header} from '../src/components/header.jsx'
-import { NewItens } from './components/newItens.jsx'
+import {Header} from './components/Header.jsx'
+import { NewItens } from './components/NewItens.jsx'
 import {Taks} from './components/Taks.jsx'
 
 
@@ -19,7 +19,7 @@ function App() {
     {
       id: 1,
       description: 'Realizar a Planejamento de Estudo da faculdade'
-      }
+    }
   ]);
   
   const allTasks = tasks.length;

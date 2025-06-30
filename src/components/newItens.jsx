@@ -1,4 +1,4 @@
-import style from './newItens.module.css';
+import style from './NewItens.module.css';
 import {PlusCircle} from '@phosphor-icons/react';
 
 import { useState } from 'react';

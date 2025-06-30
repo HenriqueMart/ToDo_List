@@ -1,6 +1,6 @@
 import {RocketLaunch, Rocket} from '@phosphor-icons/react';
 
-import style from './header.module.css';
+import style from './Header.module.css';
 
 export function Header(){
     return(
